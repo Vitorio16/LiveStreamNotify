@@ -1,0 +1,29 @@
+<h1>Live Stream Notifier</h1>
+
+<h2>Add Streamer</h2>
+
+<form method="POST" action="/add">
+  <select name="platform">
+    <option value="twitch">Twitch</option>
+    <option value="tiktok">TikTok</option>
+  </select>
+
+  <input name="username" placeholder="Streamer Username" required />
+
+  <input name="telegram_chat_id" placeholder="Telegram Chat ID" required />
+
+  <button type="submit">Save</button>
+</form>
+
+<hr/>
+
+<h2>Streamers</h2>
+
+<ul>
+  <% streamers.forEach(function(s) { %>
+    <li>
+      <strong><%= s.platform %></strong> -
+      <%= s.username %>
+    </li>
+  <% }) %>
+</ul>

@@ -1,0 +1,16 @@
+PORT=3000
+
+# Telegram
+TELEGRAM_BOT_TOKEN=xxxxx
+TELEGRAM_CHAT_ID=-100xxxxxxxx
+
+# Twitch
+TWITCH_CLIENT_ID=xxxx
+TWITCH_CLIENT_SECRET=xxxx
+TWITCH_WEBHOOK_SECRET=supersecret
+
+# TikTok
+TIKTOK_USERNAME=yourusername
+
+# Redis
+REDIS_URL=redis://redis:6379
